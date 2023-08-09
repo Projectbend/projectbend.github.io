@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- ... -->
+</head>
+<body>
+    <h1>Vote for a Candidate</h1>
+    <form id="voteForm">
+        <label for="candidate">Select a Candidate:</label>
+        <select id="candidate" name="candidate">
+            <option value="candidate1">Candidate 1</option>
+            <option value="candidate2">Candidate 2</option>
+            <option value="candidate3">Candidate 3</option>
+        </select>
+        <button type="submit">Vote</button>
+    </form>
+    <div>
+        <canvas id="voteChart"></canvas>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+

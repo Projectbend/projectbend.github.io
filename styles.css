@@ -1,0 +1,46 @@
+/* Reset some default styles and apply basic styling */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Default styles for larger screens */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    display: inline-block;
+    margin-top: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+/* Styles for screens with a maximum width of 768px (small screens) */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    nav {
+        display: block;
+        margin-top: 10px;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+        padding: 5px;
+    }
+}
